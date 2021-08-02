@@ -1,0 +1,60 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.logo{
+    width: 400px;
+    height: 474px;
+    margin-left: 16px;
+    margin-top: 10px;
+}
+.vector{
+    margin-left: 447px;
+    position: relative;
+    z-index: 2;
+    transform: translateY(-242px);
+    width: 550px;
+    height: 259px;
+}
+.title{
+    position: relative;
+    z-index: 3;
+    transform: translateY(-625px);
+    margin-left: 470px;
+    font-family: 'Cantata One', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: -0.02em;
+}
+.paragraph{
+    width: 778px;
+    height: 200px;
+    position: relative;
+    z-index: 3;
+    transform: translateY(-605px);
+    margin-left: 470px;
+    font-size: 20px;
+}
+.vector2{
+    padding: 0;
+    margin: 0;
+    transform: translateY(5px);
+    position: relative;
+}
+.imagenGryffindor{
+    position: relative;
+}
+#Footer{
+    width: 1423px;
+    height: 134px;
+    background-color: #742C20;
+    display: flex;
+}
+.Reference{
+    color: white;
+    margin-top: 49px;
+    margin-left: 60px;
+    justify-content: space-around;
+}

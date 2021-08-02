@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    box-sizing: border-box; 
+    padding: 0;
+} /*border-box hace que todos los elementos que esten en la caja quepan perfectamente */
+body{
+    font-family: sans-serif;
+    padding: 0px 0px 0; 
+}
+.header{
+    height: 80px;
+    width:100%;
+    top: 0;
+    left: 0;
+}/*position fixed hace que la clase mantega su posición aun se este scrolleando o se cambie el tamaño de la pantalla*/
+.nav{
+    display: flex;
+    padding: 0 128px;
+}
+.nav_div1{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.image_logoHarryPotter{
+    width:159px;
+    padding: 0 10px;
+}
+.nav_link{
+    color: black;
+    text-decoration: none;
+}
+.logo{
+    font-family: 'Cantata One', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    padding: 0;
+    line-height: 45.7px;
+    letter-spacing: -2%;
+    width:180px;
+    color: black;
+}/*line-height pone el interleneado de cierto tamaño, en este caso es igual al header por ende queda perfectamente centrado*/
+.nav_Menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:179px;
+    list-style: none;
+}/* display:flex tiene por defecto ubicar los elementos horizontalmente*/
+.nav_menu_item{
+    margin: 0 22.5px;
+    margin-top: 32px;
+    margin-bottom: 25px;
+    height: 24px;
+    width: max-content;
+}/*text-transform transforma el texto*/
+/*width:max-content deja el maximo del contenido permitiendo que cuando la pantalla se disminuya no cambie*/
+.nav_menu_link{
+    padding: 8px 12px;
+    font-size: 24px;
+    font-family: 'Crimson Text', serif;
+}
+.nav_menu_link:hover{
+    background: black;
+    color:white;
+    border-radius: 30%;
+    transition: 0.9s;
+} /*hover cuando el mouse este encima sucede el estilo*/
+.nav_toggle{
+    color: black;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+
+    display: none;
+}
+hr{
+    background-color:black;
+    margin-left: 128px;
+    margin-right: 128px;
+    width: 1080px;
+    height: 2.5px;
+}
+.slider{
+    width: 90%;
+    max-width: 120em;
+    padding: 2em;
+    overflow: hidden;
+    padding: 0px;
+    margin-top: 34px;
+    margin-left: 128px;
+}
+.slider .big{
+    width: 300%;
+    display: flex;
+    flex-flow: row nowrap;
+
+
+    padding:0;
+    
+
+    transition: all .5s ease;
+    transform: translate(0%);
+}
+.slider .img{
+    width: 1079px;
+
+    min-height: 15vh;
+}
+.slider .points{
+    width: 100%;
+    padding: .4em;
+    margin: 1em 0 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.slider .point{
+    width: 2em;
+    height: 2em;
+    background-color: black;
+    margin: 1em 1em 0;
+    border-radius: 50%;
+}
+.slider .point.active{
+    background-color: gray;
+}
+.second_div{
+    margin-left: 130px;
+
+    display: flex;
+}
+.text{
+    width: 754px;
+    height: 249px;
+    margin-left: 37px;
+    margin-top: 40px;
+    letter-spacing: -2%;
+    line-height: 24.52px;
+}
+.imgNextToTheText{
+    width: 252px;
+    height: 219px;
+    margin-top: 45px;
+    margin-bottom:46px ;
+    
+}
+#imageCenter{
+    background-image: url("../img/ImagenCentro.png");
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 164px 446px 164px;
+    column-gap: 153px;
+    height: 889px;
+    width: 1294px;
+    padding-top: 89px;
+    padding-left:129px;
+    padding-bottom: 89px;
+    padding-right:129px ;
+    justify-content: center;
+}
+.pageLogos{
+    width: 164px;
+    height: 164px;
+}
+
+.logoRavenclaw{
+    grid-column: 3/4;
+    justify-self: end;
+    width: 164px;
+    height: 164px;
+}
+.imageHowarts{
+    width: 446px;
+    height: 422px;
+    margin-top: 99.5px;
+}
+#imageBooks{
+    margin-top: 39px;
+    margin-left: 128px;
+    margin-right: 128px;
+    display: grid;
+    grid-template-columns: 315px 315px 315px;
+    column-gap: 55px;
+    row-gap: 35px;
+    justify-content: center;
+}
+.Books{
+    width: 315px;
+    height: 533px;
+}
+.book7{
+    grid-column: 2/3;
+    justify-self: center;
+}
+.containerHarryRon{
+    display: flex;
+}
+.containerHarry:hover{
+    transform: translateY(0px);
+}
+.containerHarry:hover:before{
+    opacity: 1;
+}
+.containerHarry{
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+.containerHarry:hover .textHarry{
+    opacity: 1;
+    transform: translateY(0);
+}
+.containerHarry:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-top: 35px;
+    width: 840px;
+    height: 421px;
+    background: linear-gradient(to top, #000, transparent);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+}
+.containerHarry .textHarry{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: 0.5s;
+    width: 840px;
+}
+.containerRon:hover{
+    transform: translateY(0px);
+}
+.containerRon:hover:before{
+    opacity: 1;
+}
+.containerRon{
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+.containerRon:hover .textRon{
+    opacity: 1;
+    transform: translateY(0);
+}
+.containerRon:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20;
+    display: block;
+    margin-top: 35px;
+    width: 454px;
+    height: 421px;
+    background: linear-gradient(to top, #000, transparent);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+}
+.containerRon .textRon{
+    position: absolute;
+    z-index: 3;
+    color:#fff;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: 0.5s;
+    width: 454px;
+}
+.containerHermione:hover{
+    transform: translateY(0px);
+}
+.containerHermione:hover:before{
+    opacity: 1;
+}
+.containerHermione{
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+.containerHermione:hover .textHermione{
+    opacity: 1;
+    transform: translateY(0);
+}
+.containerHermione:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20;
+    display: block;
+    margin-top: 35px;
+    width: 1294px;
+    height: 378px;
+    background: linear-gradient(to top, #000, transparent);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+}
+.containerHermione .textHermione{
+    position: absolute;
+    z-index: 3;
+    color:#fff;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: 0.5s;
+    width: 1294px;
+}
+
+.HarryCharacter{
+    width:840px;
+    height:421px;
+    margin-top: 35px;
+    position: absolute;   
+}
+.RonCharacter{
+    width:454px;
+    height:421px;
+    margin-top: 35px;
+}
+.HermioneCharacter{
+    width:1294px;
+    height: 415px;
+}
+#Footer{
+    margin-right: 30px;
+    width: 1294px;
+    height: 134px;
+    background-color: #742C20;
+    display: flex;
+}
+.Reference{
+    color: white;
+    margin-top: 49px;
+    margin-left: 60px;
+    justify-content: space-around;
+}
+
+@media(max-width:768px){
+    body{
+        padding-top: 80px; 
+    }
+
+    .header{
+        height: 60px;
+    }/*position fixed hace que la clase mantega su posición aun se este scrolleando o se cambie el tamaño de la pantalla*/
+
+    .logo{
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }/*line-height pone el alto de linea de cierto tamaño, en este caso es igual al header por ende queda perfectamente centrado*/
+    .nav_Menu{
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        background-color:#2c3e50;
+        position:fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+    }/* flex-direction: column pone la direccción en columna
+     height: calc(100% - 60px) permite poner todo el contenido en la pantalla menos los 60 pixeles
+     overflow-y:auto permite hacer el scrolling
+     left pone un padding del 100% a la izquierda*/
+
+    .nav_menu_item{
+        line-height: 70px;
+    }
+    .nav_menu_link:hover,
+    .nav_menu_link_active{
+        color: red;
+        transition: 0.5s;
+    } /*hover cuando el mouse este encima sucede el estilo*/
+    .nav_toggle{ 
+        display: block;
+    }
+    .nav_menu_visible{
+        left: 0;
+    }
+}
